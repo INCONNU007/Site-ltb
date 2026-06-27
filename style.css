@@ -327,7 +327,8 @@ footer {
 .titre-avec-logo h1 {
     font-size: 1.2rem;     /* Ajuste la taille du texte pour le téléphone */
     margin: 0;             /* Enlève les marges par défaut */
-    color: #003366;        /* Ton bleu de titre */
+    color: white;     
+    text-align: center;/* Ton bleu de titre */
 }
 
 
