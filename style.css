@@ -256,15 +256,13 @@ footer {
         display: flex; /* On affiche le bouton burger */
     }
 
-    /* Classe qui sera ajoutée par le JavaScript pour ouvrir le menu */
-    nav.active {
-        display: block;
-    }
+
+    
 /* ==========================================================================
    STYLE POUR LE MENU SUR TÉLÉPHONE (Dans ta @media max-width: 768px)
    ========================================================================== */
 
-nav {
+    nav {
     display: none; 
     position: absolute;
     top: 60px; /* Aligne le menu sous la barre bleue */
@@ -274,13 +272,13 @@ nav {
     padding: 30px 0; /* Plus d'espace en haut/bas pour faire respirer */
     box-shadow: 0 4px 5px rgba(0,0,0,0.1);
     z-index: 1000; /* S'assure que le menu passe au-dessus du contenu */
-}
+    }
 
-nav.active {
+    nav.active {
     display: block;
-}
+    }
 
-nav ul {
+    nav ul {
     display: flex;
     flex-direction: column; /* Aligne les éléments les uns sous les autres */
     align-items: center;    /* CENTRE parfaitement chaque élément au milieu de l'écran */
@@ -289,9 +287,9 @@ nav ul {
     padding: 0;             /* Supprime le décalage de la liste à puce */
     margin: 0;
     list-style: none;       /* Enlève les petits points blancs moches devant les textes */
-}
+    }
 
-nav ul li a {
+    nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.2rem;      /* Agrandit légèrement le texte pour qu'il soit plus lisible */
@@ -299,8 +297,8 @@ nav ul li a {
     display: block;
     width: 100%;
     text-align: center;     /* Force le texte du lien à se centrer */
+    }
 }
-
 
 /* ==========================================================================
    STYLE POUR L'ORDINATEUR (À mettre tout en bas de ton fichier, HORS de la @media mobile)
@@ -326,7 +324,7 @@ nav ul li a {
     }
 }
 
-}
+
 /* Style corrigé pour afficher TOUTE la photo entièrement */
 .photo-actualite {
     margin-top: 20px; /* Éspace entre le texte et la photo */
