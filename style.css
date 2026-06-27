@@ -299,3 +299,10 @@ footer {
     display: block;
     object-fit: contain; /* Force l'image à s'afficher ENTIÈREMENT */
 }
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
