@@ -281,3 +281,21 @@ footer {
         gap: 20px;
     }
 }
+/* Style corrigé pour afficher TOUTE la photo entièrement */
+.photo-actualite {
+    margin-top: 20px; /* Éspace entre le texte et la photo */
+    width: 100%;
+    max-width: 600px; /* Tu peux baisser ou augmenter cette taille selon tes goûts */
+    margin-left: auto;
+    margin-right: auto; /* Ces deux lignes permettent de centrer la photo */
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.photo-actualite img {
+    width: 100%;
+    height: auto; /* Laisse la hauteur s'adapter pour ne pas écraser l'image */
+    display: block;
+    object-fit: contain; /* Force l'image à s'afficher ENTIÈREMENT */
+}
