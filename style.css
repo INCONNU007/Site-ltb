@@ -303,6 +303,12 @@ footer {
     max-width: 100%;
     height: auto;
     display: block;
+    display: block;
+    width: 100%;       /* Force l'image à prendre la largeur du bloc blanc */
+    max-width: 100%;   /* Empêche de déborder */
+    height: auto;      /* Garde les bonnes proportions sans déformer */
+    border-radius: 8px; /* Optionnel : ajoute des bords arrondis pour copier le style des blocs blancs */
+    margin-top: 20px;  /* Espace le haut de la photo du bloc précédent */
 }
 
 
