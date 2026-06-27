@@ -301,13 +301,32 @@ footer {
 }
 @media (min-width: 769px) {
     /* 1. On force le header à aligner le logo à gauche et le menu à droite */
-    header, .header-global {
+    
+     header, .header-global {
         display: flex !important;
         flex-direction: row !important;
-        justify-content: space-between; /* Pousse le logo à gauche et le menu à droite */
-        align-items: center;
-        width: 100%;
+        justify-content: space-between !important; /* Pousse bien le titre à gauche et le menu à droite */
+        align-items: center !important;
+        
+        /* --- LES LIGNES MAGIQUES POUR L'ALIGNEMENT --- */
+        width: 100% !important;
+        max-width: 1200px !important;  /* Utilise la même largeur maximale que ton bloc "Nos Formations & Filières" */
+        margin: 0 auto !important;     /* Centre tout le bloc de l'en-tête au milieu de l'écran */
+        padding: 10px 20px !important; /* Donne un espace de sécurité à gauche et à droite */
+        box-sizing: border-box !important;
     }
+
+    /* Optionnel : On s'assure que la liste ne crée pas de décalage invisible */
+    nav ul {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 25px !important;          /* Un espacement propre entre chaque texte du menu */
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+    }
+
+
 
     /* 2. On affiche le menu normalement */
     nav {
@@ -319,15 +338,7 @@ footer {
         padding: 0 !important;
     }
 
-    /* 3. On force la liste à s'aligner sur une seule ligne horizontale */
-    nav ul {
-        display: flex !important;
-        flex-direction: row !important; /* Aligne de gauche à droite */
-        list-style: none !important;   /* Supprime les puces */
-        gap: 20px !important;           /* Espace entre les liens */
-        margin: 0 !important;
-        padding: 0 !important;
-    }
+    
 
     /* 4. On gère le style des liens */
     nav ul li a {
