@@ -310,5 +310,24 @@ footer {
     border-radius: 8px; /* Optionnel : ajoute des bords arrondis pour copier le style des blocs blancs */
     margin-top: 20px;  /* Espace le haut de la photo du bloc précédent */
 }
+.titre-avec-logo {
+    display: flex;         /* Aligne le logo et le texte sur la même ligne */
+    align-items: center;   /* Centre verticalement le logo avec le texte */
+    gap: 10px;             /* Crée un petit espace propre entre le logo et le texte */
+    margin-bottom: 15px;   /* Espace avec le reste de la page */
+}
+
+.logo-mini {
+    width: 40px;           /* Taille réduite pour aller à côté du texte */
+    height: 40px;          /* Garde le format carré parfait */
+    object-fit: cover;     /* Recadre proprement l'image sans la déformer */
+    border-radius: 4px;    /* Légers bords arrondis pour le style */
+}
+
+.titre-avec-logo h1 {
+    font-size: 1.2rem;     /* Ajuste la taille du texte pour le téléphone */
+    margin: 0;             /* Enlève les marges par défaut */
+    color: #003366;        /* Ton bleu de titre */
+}
 
 
