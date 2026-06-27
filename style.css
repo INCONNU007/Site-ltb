@@ -299,30 +299,50 @@ footer {
     text-align: center;     /* Force le texte du lien à se centrer */
     }
 }
-
-/* ==========================================================================
-   STYLE POUR L'ORDINATEUR (À mettre tout en bas de ton fichier, HORS de la @media mobile)
-   ========================================================================== */
 @media (min-width: 769px) {
+    /* 1. On force le header à aligner le logo à gauche et le menu à droite */
+    header, .header-global {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between; /* Pousse le logo à gauche et le menu à droite */
+        align-items: center;
+        width: 100%;
+    }
+
+    /* 2. On affiche le menu normalement */
     nav {
         display: block !important;
-        position: static;
-        width: auto;
-        background-color: transparent;
-        box-shadow: none;
-        padding: 0;
+        position: static !important; /* Annule le positionnement absolu du téléphone */
+        width: auto !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding: 0 !important;
     }
 
+    /* 3. On force la liste à s'aligner sur une seule ligne horizontale */
     nav ul {
-        flex-direction: row; /* Aligne le menu horizontalement sur ordinateur */
-        gap: 20px;
+        display: flex !important;
+        flex-direction: row !important; /* Aligne de gauche à droite */
+        list-style: none !important;   /* Supprime les puces */
+        gap: 20px !important;           /* Espace entre les liens */
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
+    /* 4. On gère le style des liens */
     nav ul li a {
-        font-size: 1rem;
-        white-space: nowrap; /* FORCE "Nos filières" à rester sur UNE SEULE LIGNE sur ordinateur */
+        font-size: 1rem !important;
+        white-space: nowrap !important; /* Empêche les retours à la ligne */
+        color: #ffffff !important;
+        text-decoration: none;
+    }
+
+    /* 5. IMPORTANT : On cache le bouton burger (les 3 traits) sur ordinateur */
+    .burger-menu, .menu-toggle {
+        display: none !important;
     }
 }
+
 
 
 /* Style corrigé pour afficher TOUTE la photo entièrement */
