@@ -273,7 +273,7 @@ footer {
     }
 
     nav ul {
-        flex-direction: column; /* Aligner les liens verticalement */
+        flex-direction: list; /* Aligner les liens verticalement */
         align-items: center;
         gap: 20px;
     }
