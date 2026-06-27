@@ -1,0 +1,283 @@
+/* Réglages de base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Design de l'en-tête (Header) */
+header {
+    background-color: #004080; /* Un bleu sérieux et institutionnel */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f39c12; /* Touche d'orange au survol (couleurs de la CI) */
+}
+
+/* Design de la section d'accueil (Hero) */
+.hero {
+    background-color: #e0eaf5;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.8em;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d68910;
+}
+
+/* Design des cartes de formation */
+.formations {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.formations h2 {
+    color: #004080;
+    margin-bottom: 40px;
+}
+
+.cartes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permet de passer à la ligne sur petit écran */
+}
+
+.carte {
+    background-color: white;
+    border-top: 4px solid #004080;
+    border-radius: 8px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.carte:hover {
+    transform: translateY(-10px); /* Fait "sauter" la carte au survol */
+}
+
+/* Pied de page */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+/* ---- Styles pour les nouvelles pages ---- */
+
+.page-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.page-section h2 {
+    color: #004080;
+    border-bottom: 3px solid #f39c12;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.intro {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Styles Formations */
+.liste-formations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filiere-bloc {
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #f39c12;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.filiere-bloc h3 {
+    margin-top: 0;
+    color: #004080;
+}
+
+/* Styles Actualités */
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.date {
+    color: #f39c12;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.article h3 {
+    margin: 10px 0;
+    color: #004080;
+}
+
+/* Styles Contact */
+.contact-conteneur {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.champ {
+    margin-bottom: 20px;
+}
+
+.champ label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.champ input, .champ textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Évite que le champ dépasse */
+}
+
+.contact-infos {
+    flex: 1;
+    min-width: 300px;
+    background-color: #e0eaf5;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact-infos h3 {
+    color: #004080;
+    margin-top: 0;
+}
+
+/* ---- MENU MOBILE RESPONSIVE ---- */
+
+/* Cacher le bouton burger par défaut sur ordinateur */
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* Styles spécifiques pour les écrans de téléphone */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .burger-menu {
+        display: flex; /* On affiche le bouton burger */
+    }
+
+    nav {
+        display: none; /* On cache le menu normal */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #004080;
+        padding: 20px 0;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Classe qui sera ajoutée par le JavaScript pour ouvrir le menu */
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column; /* Aligner les liens verticalement */
+        align-items: center;
+        gap: 20px;
+    }
+}

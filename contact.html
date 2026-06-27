@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lycée Technique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+        <div class="logo">
+            <h1>Lycée Technique</h1>
+        </div>
+        <button class="burger-menu" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formations.html">Nos Filières</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="page-section">
+        <h2>Contactez-nous</h2>
+        <p class="intro">Une question ? Un renseignement ? Remplissez le formulaire ci-dessous ou utilisez nos coordonnées.</p>
+
+        <div class="contact-conteneur">
+            <form class="contact-form">
+                <div class="champ">
+                    <label>Nom complet</label>
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+                <div class="champ">
+                    <label>Adresse Email</label>
+                    <input type="email" placeholder="votre@email.com" required>
+                </div>
+                <div class="champ">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Votre message ici..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer le message</button>
+            </form>
+
+            <div class="contact-infos">
+                <h3>Nos Coordonnées</h3>
+                <p><strong>Adresse :</strong> Cocody, Boulevard de l'Université, Abidjan, Côte d'Ivoire</p>
+                <p><strong>Téléphone :</strong> +225 01 02 03 04 05</p>
+                <p><strong>Email :</strong> info@lyceetechnique.ci</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Lycée Technique. Tous droits réservés.</p>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
